@@ -1,6 +1,6 @@
 # 야놀자
 
-* https://www.woowahan.com/#/fonts
+* http://yanolja.in/ko/yafont/
 
 ## 라이센스
 ```
