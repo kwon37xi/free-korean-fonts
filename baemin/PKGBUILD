@@ -1,0 +1,32 @@
+# Maintainer: KwonNam Son <kwon37xi at gmail dot com>
+
+pkgname=ttf-baemin
+pkgver=20190730
+pkgrel=1
+depends=('fontconfig' 'xorg-font-utils')
+pkgdesc="Baedal Minjok Korean TrueType fonts."
+url="https://www.woowahan.com/#/fonts"
+arch=('any')
+provides=('ttf-font')
+groups=('infinality-bundle-fonts-extra')
+license=('OFL')
+source=(http://d1mphx2csg3pcg.cloudfront.net/fonts/BMHANNAPro.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMHANNAAir_ttf.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMKIRANGHAERANG-TTF.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMYEONSUNG_ttf.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMDOHYEON_ttf.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMHANNA_11yrs_ttf.ttf
+	http://d1mphx2csg3pcg.cloudfront.net/fonts/BMJUA_ttf.ttf
+	)
+md5sums=('ad793ad851f7d160fa83b1ec1b9f1e64'
+         'e08a8deea489690784bb0d00f94010cf'
+         '7ae1e9681892b63635940abdc29b6e65'
+         '30f546f72ea8c7fcb5eff6d4968da279'
+         '9dbe9ac8eacbaa0f864d2087ea589c42'
+         'c064e4593c51ae3a306f0ddced0dc7c7'
+         '7dbe95a75200471524c4e5bc7a279708')
+
+package() {
+  install -m755 -d "${pkgdir}"/usr/share/fonts/"${pkgname}"
+  install -m644 *.ttf "${pkgdir}"/usr/share/fonts/"${pkgname}"
+}
