@@ -5,7 +5,9 @@ Free and redistributable Korean Fonts.
 
 ## Linux 에 설치하기
 ```
-cd ~/.fonts # 만약 자신의 HOME에 .fonts 디렉토리가 없으면 생성한다.
+mkdir -p ~/.fonts # 만약 자신의 HOME에 .fonts 디렉토리가 없으면 생성한다.
+
+cd ~/.fonts
 git clone https://github.com/kwon37xi/free-korean-fonts.git
 
 # Font 다시 인덱싱
