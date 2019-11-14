@@ -9,7 +9,6 @@ Free and redistributable Korean Fonts.
 mkdir -p ~/.fonts # 만약 자신의 HOME에 .fonts 디렉토리가 없으면 생성한다.
 
 cd ~/.fonts
-cd /usr/share/fonts
 
 git clone https://github.com/kwon37xi/free-korean-fonts.git
 
